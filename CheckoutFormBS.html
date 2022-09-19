@@ -52,25 +52,144 @@
           <div class="row g-3">
             <div class="col-md-5 col-lg-4 order-md-last">
               <h4
-                class="d-flex justify-content-between 
-                align-items-center mb-3">
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <span class="text-muted">Your cart</span>
-                <span class="badge bg-warning rounded-pill">4</span>
+                <span class="badge bg-warning rounded-pill">3</span>
               </h4>
               <ul class="list-group mb-3">
-                <li class="list-group-item d-flex justify-content-between lh-sm border-info">
-                    <img src="./img/iphone.png" alt="" width="40" height="40" class="me-2">
-                    <div class="me-2">
-                        <h6 class="my-0">
-                            Iphone
-                            <small class="text-muted">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, delectus.
-                            </small>
-                        </h6>
-                    </div>
-                    <span>9.000:-</span>
+                <li
+                  class="list-group-item d-flex justify-content-between lh-sm border-info"
+                >
+                  <img
+                    src="./img/iphone.png"
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="me-2"
+                  />
+                  <div class="me-2">
+                    <h6 class="my-0">
+                      Iphone
+                      <small class="text-muted">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Expedita, delectus.
+                      </small>
+                    </h6>
+                  </div>
+                  <span>9.000:-</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between lh-sm border-info"
+                >
+                  <img
+                    src="./img/apple-watch.jpeg"
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="me-2"
+                  />
+                  <div class="me-2">
+                    <h6 class="my-0">
+                      Apple Watch
+                      <small class="text-muted">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Expedita, delectus.
+                      </small>
+                    </h6>
+                  </div>
+                  <span>4.500:-</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between lh-sm border-info"
+                >
+                  <img
+                    src="./img/macbookair.jpeg"
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="me-2"
+                  />
+                  <div class="me-2">
+                    <h6 class="my-0">
+                      Macbook Air
+                      <small class="text-muted">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Expedita, delectus.
+                      </small>
+                    </h6>
+                  </div>
+                  <span>21.000:-</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between bg-light"
+                >
+                  <div class="text-success">
+                    <h6 class="my-0">Promotion Code</h6>
+                    <small class="text-warning fw-bold"
+                      >New Year Discount</small
+                    >
+                  </div>
+                  <span class="text-success">-2.000:-</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (Kr)</span>
+                  <strong>32.500:-</strong>
                 </li>
               </ul>
+              <form class="card">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Promotion Code"
+                  />
+                  <button class="btn btn-warning" type="submit">Redeem</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3"> Billing address:</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      A valid first name is required!
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      A valid last name is required!
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="yourname@example.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address!
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </main>
