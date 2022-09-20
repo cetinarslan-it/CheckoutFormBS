@@ -150,7 +150,7 @@
             </div>
 
             <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3"> Billing address:</h4>
+              <h4 class="mb-3">Billing address:</h4>
               <form class="needs-validation" novalidate>
                 <div class="row g-3">
                   <div class="col-sm-6">
@@ -168,9 +168,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <label for="lastName" class="form-label">
-                      Last Name
-                    </label>
+                    <label for="lastName" class="form-label"> Last Name </label>
                     <input
                       type="text"
                       class="form-control"
@@ -183,11 +181,106 @@
                   </div>
                   <div class="col-12">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="yourname@example.com" required>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="yourname@example.com"
+                      required
+                    />
                     <div class="invalid-feedback">
-                        Please enter a valid email address!
+                      Please enter a valid email address!
                     </div>
                   </div>
+                  <div class="col-12">
+                    <label for="address" class="form-label">Address</label>
+                    <input
+                      type="address"
+                      class="form-control"
+                      id="email"
+                      placeholder="Exp: Sjödalstorget X, lgh. XXXX, 14147 Huddinge"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid address!
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="address" class="form-label"
+                      >Address 2
+                      <span class="text-muted">(Optional)</span></label
+                    >
+                    <input
+                      type="address"
+                      class="form-control"
+                      id="email"
+                      placeholder="Apartment or suit"
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid address!
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="" class="form-label"> City </label>
+                    <select class="form-select" name="" id="city">
+                      <option value="" selected>Select one...</option>
+                      <option value="">Stockholm</option>
+                      <option value="">Istanbul</option>
+                      <option value="">New York</option>
+                      <option value="">London</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid city!...
+                    </div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="country" class="form-label"> Country </label>
+
+                    <select class="form-select" name="" id="country">
+                      <option value="" selected>Select one...</option>
+                      <option value="">SWE</option>
+                      <option value="">TR</option>
+                      <option value="">USA</option>
+                      <option value="">UK</option>
+                    </select>
+
+                    <div class="invalid-feedback">
+                      Please select a valid country!...
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="postcode" class="form-label"> Postcode </label>
+
+                    <input type="text" class="form-control" id="postcode" required />
+
+                    <div class="invalid-feedback">Postcode required!...</div>
+                  </div>
+                </div>
+
+                <hr class="my-3" />
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="same-address"
+                  />
+                  <label for="same-address" class="class-check-label">
+                    Shipping address is the same as my billing address.
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="save-address"
+                  />
+                  <label for="save-address" class="class-check-label">
+                    Save this info for the next time-
+                  </label>
                 </div>
               </form>
             </div>
